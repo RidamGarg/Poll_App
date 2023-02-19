@@ -32,7 +32,7 @@ function QuestionDisplay(props) {
             style={{ height: "50px" }}
             className="mt-5 d-flex justify-content-between"
           >
-            <h2>Select Correct Option & Input</h2>
+            <h2>Select Correct Option & Submit</h2>
             <CountdownCircleTimer
               isPlaying
               duration={60}
