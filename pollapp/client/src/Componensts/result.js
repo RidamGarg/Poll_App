@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { Link } from "react-router-dom";
-const socket = io("http://localhost:5000/");
+const socket = io("https://poll-app-six.vercel.app/");
 function Result(props) {
   const [data, setData] = useState(null);
   useEffect(() => {

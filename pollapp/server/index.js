@@ -54,8 +54,8 @@
 let markedArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let question = null;
 let totalSubmision = 0;
-
-const io = require("socket.io")(5000, {
+const port = process.env.PORT || 5000;
+const io = require("socket.io")(port, {
   cors: {
     origin: ["http://localhost:3000"],
   },

@@ -19,7 +19,7 @@ function QuestionForm(props) {
   };
   const handleSubmit = () => {
     console.log(opArray + "-->" + correct);
-    const socket = io("http://localhost:5000/");
+    const socket = io("https://poll-app-six.vercel.app/");
     localStorage.setItem("question", {
       question: text,
       options: opArray,
