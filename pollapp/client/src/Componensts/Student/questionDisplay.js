@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import { Link } from "react-router-dom";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import { useNavigate } from "react-router-dom";
-const socket = io("https://poll-app-six.vercel.app/");
+const socket = io("http://localhost:5000/");
 function QuestionDisplay(props) {
   const [questionObj, setQuestion] = useState(null);
   const [marked, setMarked] = useState("");
